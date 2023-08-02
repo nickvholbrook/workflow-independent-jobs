@@ -1,0 +1,19 @@
+name: Independent Jobs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 1
+        run: cat sample.txt
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 2
+        run: echo "Job 2 executed successfully"
